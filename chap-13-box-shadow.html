@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <style>
+        .container {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        gap: 40px;
+        padding: 50px;
+    }
+    .box {
+        width: 150px;
+        height: 150px;
+        background-color: deeppink;
+        border: 2px;
+        padding: 50px;
+        width: fit-content;
+        max-width: 300px;
+    }
+        .shadow-box1 {
+        -moz-box-shadow: -5px -5px #777777;
+        -webkit-box-shadow: -5px -5px #777777;
+        box-shadow: -5px -5px #777777;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="shadow-box1"></div>
+    </div>
+    </body>
+</html>

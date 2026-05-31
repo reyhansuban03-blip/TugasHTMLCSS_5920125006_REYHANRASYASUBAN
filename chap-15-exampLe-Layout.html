@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        body {
+    background-color: #4a4a4a; /* Warna abu-abu gelap latar belakang */
+    color: #f0f0f0;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+.logo h1 { color: #d48a3b; margin: 0; } /* Warna oranye khas */
+
+/* Efek Segitiga Utama */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+.triangle-img {
+    width: 100%;
+    height: 400px;
+    background-color: #333;
+    
+}
+
+.triangle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid Artikel di Bawah */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-top: 2px solid #666;
+    padding-top: 20px;
+}
+
+.article-grid img {
+    width: 100%;
+    filter: grayscale(100%); /* Memberikan kesan vintage */
+    transition: 0.3s;
+}
+
+.article-grid img:hover { filter: grayscale(0%); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>PEDAL FASTER.</h1>
+                <p>THE MODERN BICYCLE MAGAZINE</p>
+            </div>
+            <nav>
+                <a href="#">home</a> / <a href="#">news</a> / <a href="#">archives</a> / <a href="#">about</a> / <a href="#">contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero">
+            <div class="triangle-img">
+                <img src="triangles.png" alt="Fixed Gear Bike">
+            </div>
+            <div class="hero-content">
+                <h2>FIXED GEAR FOREVER</h2>
+                <span class="date">16 APRIL 2011</span>
+                <p>The veloheld combines minimalist design with superb quality... (teks artikel Anda)</p>
+                <button>Continue reading...</button>
+            </div>
+        </main>
+
+        <!-- More Articles -->
+        <section class="more-articles">
+            <h3>MORE ARTICLES</h3>
+            <div class="article-grid">
+                <div class="item"><img src="more1.jpg"><p>On the Road: from the fixed gear fanatic's point of view</p></div>
+                <div class="item"><img src="more2.jpg"><p>Touring Diary: A sketchbook in your basket</p></div>
+                <div class="item"><img src="more3.jpg"><p>Product Review: All baskets were not created equal</p></div>
+                <div class="item"><img src="more4.jpg"><p>Bicycle Hall of Fame: The 1958 Schwinn Spitfire</p></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
