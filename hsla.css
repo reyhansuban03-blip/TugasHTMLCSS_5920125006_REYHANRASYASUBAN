@@ -1,0 +1,24 @@
+h1 {
+    background-color: DarkCyan;;
+    border: 50px;
+    padding: 10px;
+    margin: 30px;
+    width: 700px;
+    box-sizing: border-box;
+}
+h2{
+    background-color: #ee3e80; ;
+    border: 50px;
+    padding: 10px;
+    margin: 30px;
+    width: 700px;
+    box-sizing: border-box;
+}
+p{
+    background-color: rgb(194, 194, 190);;
+    border: 50px;
+    padding: 10px;
+    margin: 30px;
+    width: 700px;
+    box-sizing: border-box;
+}
